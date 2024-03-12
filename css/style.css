@@ -1,0 +1,132 @@
+:root {
+	--default-green: #000000;
+	--light-green: #000000;
+}
+
+* {box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+	
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.sertão {
+	background: url(../css/cadastre.html);
+	background: var(--default-green);
+	color: white;
+	text-transform: uppercase;
+	padding: 15px 60px;
+	border: none;
+	border-radius: 30px;
+	letter-spacing: 1px;
+	font-weight: bold;
+
+}
+
+.sertão:hover {
+	
+	background: var(--light-green);
+	cursor: pointer;
+}
+
+.logo{
+	width: 100%;
+	height:100%;
+	background-size: cover;
+	justify-content: center;
+	
+
+}
+
+
+
+#navbar {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: rgb(204, 223, 208);
+	position: fixed;
+	align-items: center;
+	width: 100%;
+	height: 8%;
+}
+#navbar .navbar-container{
+	font-size: large;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+#navbar .navbar-container ul {
+	display: flex;
+	list-style: none;
+
+}
+
+#navbar .navbar-container ul li {
+	padding:  0 20px;
+}
+
+#navbar .navbar-container ul li:hover {
+	color: #ff9204;
+}
+
+#navbar .navbar-container ul li:nth-child(3) {
+	border-right: 1px solid rgb(230, 215, 215);
+}
+
+
+#show {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background: url("../imagens/cacto-no-deserto_603843-1605.avif") center;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: color;
+}
+
+#show .show-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#show .show-container h2 {
+	font-size: 5rem;
+}
+
+#show .show-container p {
+	margin: 15px 0;
+	font-size: 1.1rem;
+}
+
+
+.h4{
+	width:100%
+}
+
+.navbar-items {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin-right: 20px;
+}
+
+.navbar-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-item a:hover {
+    color: #ccc;
+}

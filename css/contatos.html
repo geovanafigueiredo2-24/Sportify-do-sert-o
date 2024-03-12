@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify do Sertão - Contato</title>
+</head>
+<style>
+    :root {
+        --default-green: #000000;
+        --light-green: #000000;
+    }
+   
+    *{
+        margin: 0%;
+        
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: url(../imagens/cacto-no-deserto_603843-1605.avif);
+        line-height: 1.5; 
+        color: azure;
+        background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: color;
+    }
+
+
+    .logo{
+        width: 100%;
+        height:100%;
+        background-size: cover;
+        justify-content: center;
+        
+    
+    }
+    
+    
+    
+    #navbar {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: rgb(204, 223, 208);
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        height: 8%;
+    }
+    #navbar .navbar-container{
+        font-size: large;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    #navbar .navbar-container ul {
+        display: flex;
+        list-style: none;
+    
+    }
+    
+    #navbar .navbar-container ul li {
+        padding:  0 20px;
+    }
+    
+    #navbar .navbar-container ul li:hover {
+        color: #ff9204;
+    }
+    
+    #navbar .navbar-container ul li:nth-child(3) {
+        border-right: 1px solid rgb(230, 215, 215);
+    }
+    
+    .navbar-items {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-item {
+        margin-right: 20px;
+    }
+    
+    .navbar-item a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .navbar-item a:hover {
+        color: #ccc;
+    }
+
+    
+    
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #e97a0b;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+:root {
+    --default-green: #000000;
+    --light-green: #000000;
+}
+
+
+.logo{
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    justify-content: center;
+    
+
+}
+
+
+
+#navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(204, 223, 208);
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+}
+#navbar .navbar-container{
+    font-size: large;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+
+}
+
+#navbar .navbar-container ul li {
+    padding:  0 20px;
+}
+
+#navbar .navbar-container ul li:hover {
+    color: #ff9204;
+}
+
+#navbar .navbar-container ul li:nth-child(3) {
+    border-right: 1px solid rgb(230, 215, 215);
+}
+
+.navbar-items {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin-right: 20px;
+}
+
+.navbar-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-item a:hover {
+    color: #ccc;
+}
+
+
+
+
+
+</style>
+<body>
+    <header>
+        <navbar id="navbar">
+			<div class="navbar-container">
+				
+				<img src="../imagens/Design sem nome.png" alt="">
+			 
+				
+            
+				<ul class="navbar-items">
+					<li class="navbar-item"><a href="./index.html">Início</a></li>
+					<li class="navbar-item"><a href="./premiu.html">Premium</a></li>
+					<li class="navbar-item"><a href="./entrar.html">Entrar</a></li>
+					<li class="navbar-item"><a href="./cadastro.html">Cadastre-se</a></li>
+					<li class="navbar-item"><a href="./serviços.html">Serviços</a></li>
+					<li class="navbar-item"><a href="contatos.html">contato</a></li>
+				</ul>
+
+			</div>
+		</navbar>
+
+    </header>
+    <main>
+
+        <h1>Entre em Contato</h1>
+
+        <form action="enviar.html" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+   
+</body>
+</html>
